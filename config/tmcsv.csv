@@ -1,0 +1,146 @@
+Program Execution Time      0     8
+Monitored Parameter Count   8     4
+Monitoring Status           12    4
+Action Status               16    4
+Action Count                20    4
+Total Action Count          24    4
+Limit Exceed Countdown      28    4
+Macro Instruction Count     32    4
+Next Assignable Macro ID    36    4
+Temporary Macro Count       40    4
+Pending Event Count         44    4
+Appended Event Count        48    4
+Current Event Item ID       52    4
+Instruction Count           56    4
+Instruction Release Count   60    4
+Instruction Forwarding Count64    4
+Inject Packet Receipt Count 68    4
+Inject Frame Receipt Count  72    4
+Injection Index or Checksum Array 76 4
+N Run Flag Status           80    4
+Data Injection Packet Count 84    4
+Data Injection Temporary Area Count 88 4
+Instruction Packet Count    92    4
+Number of Instructions in Pool 96 4
+Pending Instruction Count   100   4
+Data Injection FLAG         104   4
+Instruction Parsing FLAG    108   4
+Macro Instruction FLAG      112   4
+Event Table FLAG            116   4
+Online Monitoring FLAG      120   4
+Timing Count                124   4
+Broadcast Time Base         128   4
+Broadcast Interval          132   4
+System Time Code            136   4
+Elapsed Time Code Format    140   4
+Timing Time Code Format     144   4
+Keeping Time Code Format    148   4
+Delayed Sending Item Count  152   4
+Sending Enable Status       156   4
+Sending Priority            160   4
+Sending Count               164   4
+Total Sending Count         168   4
+Real-Time Sending Item Count172   4
+Sending Enable Status       176   4
+Sending Count               180   4
+Total Sending Count         184   4
+Spacecraft X-coordinate     188   4
+Spacecraft Y-coordinate     192   4
+Discovered Target X-coordinate 196 4
+Discovered Target Y-coordinate 200 4
+Spacecraft Remaining Battery 204  4
+Spacecraft Remaining Storage Space 208 4
+Spacecraft Remaining Fuel   212   4
+Camera Current Status       216   4
+Target Observation Value    220   4
+Spacecraft Orientation Angle224   4
+Spacecraft Linear Velocity  228   4
+Target Orientation Angle    232   4
+Target Linear Velocity      236   4
+Current Data Average Value  240   4
+Current Data Transmission Efficiency 244 4
+Camera Power-On Time Cycle  248   4
+Current Location Chargeable Status   252 4
+Azimuth Turntable Angle     256   4
+Elevation Turntable Angle   260   4
+Azimuth Turntable Power-On Status 264 4
+Elevation Turntable Power-On Status 268 4
+Azimuth Turntable Voltage   272   4
+Elevation Turntable Voltage 276   4
+Inject Packet Reception Error Count 280 4
+Inject Packet Reception Error Type 284 4
+Instruction Parsing Error Count 288 4
+Instruction Parsing Error Type 292 4
+程序运行时间	0	8
+监视参数个数	8	4
+监视状态	12	4
+动作状态	16	4
+动作计数	20	4
+动作总计数	24	4
+超限倒计数	28	4
+宏指令个数	32	4
+下一个可分配的宏指令序号	36	4
+临时宏指令生成个数	40	4
+待执行事件计数	44	4
+追加事件计数	48	4
+当前事件项ID	52	4
+指令个数	56	4
+指令释放计数	60	4
+指令转发计数	64	4
+注入包接收计数	68	4
+注入帧接收计数	72	4
+注入序号或校验和数组	76	4
+N运行标志状态	80	4
+数据注入包数量	84	4
+数据注入包临时区域数量	88	4
+指令包数量	92	4
+指令池中指令的数量	96	4
+待执行指令数量	100	4
+数据注入FLAG	104	4
+指令解析FLAG	108	4
+宏指令FLAG	112	4
+事件表FLAG	116	4
+在线监控FLAG	120	4
+校时计数	124	4
+广播时间基数	128	4
+广播时间间隔	132	4
+系统时间码	136	4
+用时时间码格式	140	4
+校时时间码格式	144	4
+守时时间码格式	148	4
+延时发送项个数	152	4
+发送使能状态	156	4
+发送优先级	160	4
+发送计数	164	4
+发送总计数	168	4
+实时发送项个数	172	4
+发送使能状态	176	4
+发送计数	180	4
+发送总计数	184	4
+航天器所处X坐标	188	4
+航天器所处y坐标	192	4
+发现的目标所处x坐标	196	4
+发现的目标所处y坐标	200	4
+航天器剩余电量	204	4
+航天器剩余存储空间	208	4
+航天器剩余燃油量	212	4
+相机当前状态	216	4
+目标观测价值	220	4
+航天器朝向角度	224	4
+航天器线速度	228	4
+目标朝向角度	232	4
+目标线速度	236	4
+当前数据平均价值	240	4
+当前数传效率	244	4
+相机开机时间周期	248	4
+当前位置是否可充电	252	4
+方位转台角度	256	4
+俯仰转台角度	260	4
+方位转台开机状态	264	4
+俯仰转台开机状态	268	4
+方位转台电压	272	4
+俯仰转台电压	276	4
+注入包接收错误计数	280	4
+注入包接收错误类型	284	4
+指令解析错误计数	288	4
+指令解析错误类型	292	4

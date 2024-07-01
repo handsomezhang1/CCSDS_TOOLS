@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="study2.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+        point="org.eclipse.ui.preferencePages">
+     <page
+           class="study2.page.PreferencePage"
+           id="study2.page.referencePage"
+           name="全局设置">
+     </page>
+</extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="study2.perspective"
+            defaultShowIn="study2.views.DataBaseView"
+            fixed="false"
+            id="study2.perspective"
+            name="主窗口">
+      </perspective>
+   </extension>
+   <extension
+     point="org.eclipse.ui.commands">
+  <command
+        id="study2.commands.refreshDatabase"
+        name="刷新数据库"
+        description="刷新数据库视图">
+  </command>
+</extension>
+   <extension
+     point="org.eclipse.ui.handlers">
+  <handler
+        commandId="study2.commands.refreshDatabase"
+        class="study2.handlers.RefreshDatabaseHandler">
+  </handler>
+</extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="database"
+            name="Data Category">
+      </category>
+      <view
+            class="study2.views.FileListView"
+            icon="platform:/plugin/org.eclipse.ui/icons/full/obj16/generic_elements.png"
+            id="study2.views.FileListView"
+            name="Plugin list"
+            restorable="true">
+      </view><!--插件列表-->
+      <view
+            category="database"
+            class="study2.views.DataBaseView"
+            icon="platform:/plugin/org.eclipse.ui/icons/full/obj16/generic_elements.png"
+            id="study2.views.DataBaseView"
+            name="DataBase">
+      </view><!--数据库-->
+            <view
+            category="database"
+            class="study2.views.TelemetryDataView"
+            icon="platform:/plugin/org.eclipse.ui/icons/full/obj16/submenu.png"
+            id="study2.views.TelemetryDataView"
+            name="Telemetry Data">
+      </view><!--遥测数据-->
+       <view
+            class="study2.views.NezhaArchitectureConsoleView"
+            icon="platform:/plugin/org.eclipse.ui/icons/full/obj16/toolbar.png"
+            id="study2.views.NezhaArchitectureConsoleView"
+            name="Instruction sending window"><!-- 指令发送窗口 -->
+      </view>
+      <view
+            class="study2.views.LogView"
+            id="study2.views.LogView"
+            icon="platform:/plugin/org.eclipse.ui/icons/full/obj16/info_tsk.png"
+            name="Log System"
+            restorable="true">
+      </view><!--日志系统-->
+      <view
+            class="study2.views.editorView"
+            id="study2.views.editorView"
+            icon="platform:/plugin/org.eclipse.ui/icons/full/obj16/toolbar.png"
+            name="Plug-in console"
+            restorable="true">
+      </view><!--插件操作台-->
+            <view
+            class="study2.views.WelcomeView"
+            id="study2.views.WelcomeView"
+            icon="platform:/plugin/org.eclipse.ui/icons/full/ovr16/pinned_ovr.png"
+            name="Welcome Page"
+            restorable="true">
+      </view><!--欢迎页-->
+            <view
+                  class="study2.views.ImageView"
+                  icon="platform:/plugin/org.eclipse.ui/icons/full/obj16/generic_elements.png"
+                  id="study2.views.ImageView"
+                  name="Back image"
+                  restorable="true">
+            </view><!--回传图形-->
+      
+      
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="study2.perspective">
+      </perspectiveExtension>
+   </extension>
+
+
+<extension point="org.eclipse.help.contexts">
+   <contexts
+         file="study2.contexts1">
+   </contexts>
+</extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+   </extension>
+   
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="study2.application"
+            description="111"
+            name="application">
+         <property
+               name="windowImages"
+               value="resources/image/main_c.png,resources/image/main_c.png">
+         </property>
+         <property
+               name="appName"
+               value="application">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="FFFFFF">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="18,340,445,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="18,360,600,15">
+         </property>
+         <property
+               name="aboutText"
+               value="航天器电子数据单管理系统">
+         </property>
+         <property
+               name="aboutImage"
+               value="resources/image/main_c.png">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+<extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="study2.commands.nezhaHelp"
+            name="哪吒架构帮助"
+            description="显示帮助内容">
+      </command>
+</extension>
+
+   <extension
+        point="org.eclipse.ui.handlers">
+    <handler
+            commandId="study2.commands.nezhaHelp"
+            class="study2.actions.NezhaHelpAction">
+    </handler>
+</extension>
+   <extension point="org.eclipse.ui.commands">
+    <command
+        id="study2.commands.help"
+        name="Help"
+        description="Show help content">
+    </command>
+</extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="help/contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.ui.console.consoleFactories">
+      <consoleFactory
+            class="study2.views.MessageConsoleView"
+            label="日志系统">
+      </consoleFactory>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="study2.actions.AboutViewAction"
+            targetID="study2.views.AboutView">
+         <action
+               class="study2.actions.AboutViewAction"
+               icon="resources/image/16.ico"
+               id="study2.action1"
+               label="初始化信息"
+               menubarPath="additional"
+               style="push"
+               toolbarPath="additional">
+         </action>
+      </viewContribution>
+   </extension>
+
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="study2.views.editorcontent"
+            default="false"
+            id="study2.views.editorcontent"
+            name="内容编辑器">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.help.toc">
+    <toc file="help/toc.xml" primary="true"/>
+</extension>
+   <extension
+         point="org.eclipse.ui.helpSupport">
+      <config
+            class="study2.views.AbstractHelpUI2">
+      </config>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="study2"
+            name="SEMS-Files">
+      </category>
+      <wizard
+            category="study2"
+            class="study2.wizards.SampleNewWizard"
+            icon="icons/sample.png"
+            id="study2.wizards.SampleNewWizard"
+            name="XML">
+      </wizard>
+   </extension>
+
+</plugin>

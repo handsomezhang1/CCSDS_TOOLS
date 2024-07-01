@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="icons"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/External Plug-in Libraries">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/SEMS_Factory_1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/fastjson-2.0.15.graal.jar"/>
+	<classpathentry kind="lib" path="swing2swt.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.12.0.jar"/>
+	<classpathentry kind="lib" path="lib/sqlite-jdbc-3.30.1.jar"/>
+	<classpathentry kind="lib" path="D:/Software/eclipse/eclipse-rcp-2022-09-R-win32-x86_64/eclipse-workspace/workspace/study2/lib/fastjson-2.0.15.graal.jar"/>
+	<classpathentry kind="lib" path="D:/Software/eclipse/eclipse-rcp-2022-09-R-win32-x86_64/eclipse-workspace/workspace/study2/lib/SEMS_Factory_1.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Software/eclipse/eclipse-rcp-2022-09-R-win32-x86_64/eclipse-workspace/workspace/study2/lib/fastjson2-2.0.15.jar"/>
+	<classpathentry kind="lib" path="E:/google文件/org.eclipse.swt.win32.win32.x86_64-3.117.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
